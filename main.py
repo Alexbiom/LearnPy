@@ -1,3 +1,4 @@
 list = ["Name", 'Address', "Age", "Telephone", "Email"]
+list.extend("123")
 
-print(len(list))
+print(list)
