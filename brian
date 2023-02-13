@@ -1,0 +1,3 @@
+#! /Users/alex/LearnPy/venv/bin/python3
+
+print('hello world!')
