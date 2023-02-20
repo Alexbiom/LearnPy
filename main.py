@@ -1,4 +1,5 @@
 fin = open('words.txt')
+
 def funk_not_e(fin):
     count = 1
     for line in fin:
