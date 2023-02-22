@@ -26,12 +26,15 @@ arr = [i for i in range(1, 101)]
 def binary_search (list, iterm):
     low = 0
     high = len(list) - 1
+    z_count = 0
     while low < high:
+        z_count += 1
         mid = int((low + high)/2)
         guess = list[mid]
         if guess == iterm:
-            return guess
-        if guess > iterm:
+            print("Your number is: " + str(guess))
+            print("The number was found in " + str(z_count) + " attempts")
+        if guess > inp:
             high = mid - 1
         else:
             low = mid + 1
