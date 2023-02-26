@@ -27,7 +27,7 @@ def binary_search (list, iterm):
     low = 0
     high = len(list) - 1
     z_count = 0
-    while low < high:
+    while low <= high:
         z_count += 1
         mid = int((low + high)/2)
         guess = list[mid]
