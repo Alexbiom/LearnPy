@@ -1,3 +1,4 @@
+import math
 # function of search line/world/letter
 
 fin = open('words.txt')
@@ -22,24 +23,24 @@ print("*********END-1*********")
 
 # binary search
 
-arr = [i for i in range(1, 101)]
+arr = [i for i in range(1, 100)]
 def binary_search (list, iterm):
     low = 0
     high = len(list) - 1
     z_count = 0
-    while low < high:
+    while low <= high:
         z_count += 1
         mid = int((low + high)/2)
         guess = list[mid]
         if guess == iterm:
             print("Your number is: " + str(guess))
             print("The number was found in " + str(z_count) + " attempts")
-        if guess > inp:
+        if guess > iterm:
             high = mid - 1
         else:
             low = mid + 1
     return None
-
 print("*********END-2*********")
 
-
+binary_search(arr, 15)
+print(math.log(1000000000, 2))
