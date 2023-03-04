@@ -1,1 +1,1 @@
-A new file
+UPGRADE 1.2
